@@ -1,0 +1,17 @@
+[
+	{
+		"functional": "Selenium",
+		"framework": "TestNG",
+		"programingLanguage": "Java"
+	},
+	{
+		"functional": "Playwright",
+		"framework": "Cucumber",
+		"programingLanguage": "JavaScript"
+	},
+	{
+		"functional": "RestAssured",
+		"framework": "Cucumber + TestNG",
+		"programingLanguage": "Core Java"
+	}
+]

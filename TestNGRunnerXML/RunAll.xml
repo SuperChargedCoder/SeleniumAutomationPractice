@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="RunAllPackaes">
+	<listeners>
+		<listener class-name="extentReporter.Listener"></listener>
+	</listeners>
+  <test thread-count="3" parallel="tests" name="TestNGRun">
+    <packages>
+      <package name="expandTestingSeleniumPractice"/>
+      <package name="advanceSelenium"/>
+      <package name="testDataSetupTestNG"/>
+      <package name="functionalLogic"/>
+      <package name="expandTestingAppsAutomation"></package>
+    </packages>
+  </test> <!-- TestNGRun -->
+</suite> <!-- RunAllPackaes -->

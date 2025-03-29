@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>TestNG:  TestNGRun</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestNGRun</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 21 00:35:51 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>189 seconds (189438 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumPractice.B_LoginPage.UserLogin()'><b>UserLogin</b><br>Test class: seleniumPractice.B_LoginPage</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-bg btn-primary d-block w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (948, 924). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; browsingtopics=&quot;true&quot; style=&quot;width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-3-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1056034821646296&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CNPIkbOtmYwDFQF3nQkdLIUx-g&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=134.0.3124.72)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [564aa9683ec706e07cdf046710e4a7b5, clickElement {id=f.FF5400897472BD494C2413B1FDF869F9.d.6175E4856AD5668DFA9564A329684704.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52670}, msedge: {msedgedriverVersion: 134.0.3124.72 (c81e2c3854de..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52670/devtoo..., se:cdpVersion: 134.0.3124.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (564aa9683ec706e07cdf046710e4a7b5)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 564aa9683ec706e07cdf046710e4a7b5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at seleniumPractice.B_LoginPage.UserLogin(B_LoginPage.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024354563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024354563'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-bg btn-primary d-block w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (948, 924). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; browsingtopics=&quot;true&quot; style=&quot;width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-3-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1056034821646296&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CNPIkbOtmYwDFQF3nQkdLIUx-g&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=134.0.3124.72)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [564aa9683ec706e07cdf046710e4a7b5, clickElement {id=f.FF5400897472BD494C2413B1FDF869F9.d.6175E4856AD5668DFA9564A329684704.e.9}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.72, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52670}, msedge: {msedgedriverVersion: 134.0.3124.72 (c81e2c3854de..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52670/devtoo..., se:cdpVersion: 134.0.3124.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (564aa9683ec706e07cdf046710e4a7b5)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 564aa9683ec706e07cdf046710e4a7b5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at seleniumPractice.B_LoginPage.UserLogin(B_LoginPage.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>9</td>
+<td>seleniumPractice.B_LoginPage@40a4337a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumPractice.A_WebInputPractice.provideData()'><b>provideData</b><br>Test class: seleniumPractice.A_WebInputPractice</td>
+<td></td>
+<td>9</td>
+<td>seleniumPractice.A_WebInputPractice@292b08d6</td></tr>
+<tr>
+<td title='seleniumPractice.L_FileUpload.UploadWithSendKey()'><b>UploadWithSendKey</b><br>Test class: seleniumPractice.L_FileUpload</td>
+<td></td>
+<td>4</td>
+<td>seleniumPractice.L_FileUpload@3857f613</td></tr>
+<tr>
+<td title='seleniumPractice.M_FileDownload.DownloadFileAtCustomLocation()'><b>DownloadFileAtCustomLocation</b><br>Test class: seleniumPractice.M_FileDownload</td>
+<td></td>
+<td>13</td>
+<td>seleniumPractice.M_FileDownload@198b6731</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderJSON.PrintJSONData()'><b>PrintJSONData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderJSON<br>Parameters: {functional=Selenium, programingLanguage=Java, framework=TestNG}</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderJSON@3bf7ca37</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderJSON.PrintJSONData()'><b>PrintJSONData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderJSON<br>Parameters: {functional=Playwright, programingLanguage=JavaScript, framework=Cucumber}</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderJSON@3bf7ca37</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray.ReadTestData()'><b>ReadTestData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray<br>Parameters: Shubham, Gorakhpur</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray@79079097</td></tr>
+<tr>
+<td title='advanceSelenium.AddExtensiton.AddExtensionInAutomatedBrowser()'><b>AddExtensionInAutomatedBrowser</b><br>Test class: advanceSelenium.AddExtensiton</td>
+<td></td>
+<td>7</td>
+<td>advanceSelenium.AddExtensiton@7c6908d7</td></tr>
+<tr>
+<td title='functionalLogic.AddToCartFunctionalLogic.AddItemToCartBasicLogic()'><b>AddItemToCartBasicLogic</b><br>Test class: functionalLogic.AddToCartFunctionalLogic</td>
+<td></td>
+<td>1</td>
+<td>functionalLogic.AddToCartFunctionalLogic@4d1c00d0</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderHashMap.ReadTestData()'><b>ReadTestData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderHashMap<br>Parameters: {name=Shubham, address=Gorakhpur, age=25}</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderHashMap@3c9754d8</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray.ReadTestData()'><b>ReadTestData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray<br>Parameters: Pranesh, Jaipur</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray@79079097</td></tr>
+<tr>
+<td title='seleniumPractice.H_RadioButtons.FavSportColour()'><b>FavSportColour</b><br>Test class: seleniumPractice.H_RadioButtons</td>
+<td></td>
+<td>0</td>
+<td>seleniumPractice.H_RadioButtons@6ed3ccb2</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray.ReadTestData()'><b>ReadTestData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray<br>Parameters: Deepak, Allahabad</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderMultiDimentionalArray@79079097</td></tr>
+<tr>
+<td title='seleniumPractice.D_DynamicTable.DynamicTableHandle()'><b>DynamicTableHandle</b><br>Test class: seleniumPractice.D_DynamicTable</td>
+<td></td>
+<td>5</td>
+<td>seleniumPractice.D_DynamicTable@22ff4249</td></tr>
+<tr>
+<td title='seleniumPractice.C_RegistrationPractice.UserRegistration()'><b>UserRegistration</b><br>Test class: seleniumPractice.C_RegistrationPractice</td>
+<td></td>
+<td>11</td>
+<td>seleniumPractice.C_RegistrationPractice@6025e1b6</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderHashMap.ReadTestData()'><b>ReadTestData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderHashMap<br>Parameters: {name=Deepak, address=Allahabad, age=26}</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderHashMap@3c9754d8</td></tr>
+<tr>
+<td title='seleniumPractice.G_BrowserInformation.GetBrowserDetails()'><b>GetBrowserDetails</b><br>Test class: seleniumPractice.G_BrowserInformation</td>
+<td></td>
+<td>0</td>
+<td>seleniumPractice.G_BrowserInformation@74e52ef6</td></tr>
+<tr>
+<td title='seleniumPractice.H_RadioButtons.DefaultValue()'><b>DefaultValue</b><br>Test class: seleniumPractice.H_RadioButtons</td>
+<td></td>
+<td>0</td>
+<td>seleniumPractice.H_RadioButtons@6ed3ccb2</td></tr>
+<tr>
+<td title='seleniumPractice.J_DragDrapInContainer.DragDrop()'><b>DragDrop</b><br>Test class: seleniumPractice.J_DragDrapInContainer</td>
+<td></td>
+<td>2</td>
+<td>seleniumPractice.J_DragDrapInContainer@15de0b3c</td></tr>
+<tr>
+<td title='seleniumPractice.K_FormValidation.FormFill()'><b>FormFill</b><br>Test class: seleniumPractice.K_FormValidation</td>
+<td></td>
+<td>3</td>
+<td>seleniumPractice.K_FormValidation@489115ef</td></tr>
+<tr>
+<td title='seleniumPractice.I_DragDrop.DragDrop()'><b>DragDrop</b><br>Test class: seleniumPractice.I_DragDrop</td>
+<td></td>
+<td>1</td>
+<td>seleniumPractice.I_DragDrop@1a677343</td></tr>
+<tr>
+<td title='functionalLogic.AddToCartFunctionalLogic.AddItemToCartAdvanceLogic()'><b>AddItemToCartAdvanceLogic</b><br>Test class: functionalLogic.AddToCartFunctionalLogic</td>
+<td></td>
+<td>13</td>
+<td>functionalLogic.AddToCartFunctionalLogic@4d1c00d0</td></tr>
+<tr>
+<td title='seleniumPractice.M_FileDownload.DownloadFileAtDefaultLocation()'><b>DownloadFileAtDefaultLocation</b><br>Test class: seleniumPractice.M_FileDownload</td>
+<td></td>
+<td>3</td>
+<td>seleniumPractice.M_FileDownload@198b6731</td></tr>
+<tr>
+<td title='testDataSetupTestNG.TestNGDataProviderJSON.PrintJSONData()'><b>PrintJSONData</b><br>Test class: testDataSetupTestNG.TestNGDataProviderJSON<br>Parameters: {functional=RestAssured, programingLanguage=Core Java, framework=Cucumber + TestNG}</td>
+<td></td>
+<td>0</td>
+<td>testDataSetupTestNG.TestNGDataProviderJSON@3bf7ca37</td></tr>
+<tr>
+<td title='seleniumPractice.F_AboutPage.SendEmailToDev()'><b>SendEmailToDev</b><br>Test class: seleniumPractice.F_AboutPage</td>
+<td></td>
+<td>1</td>
+<td>seleniumPractice.F_AboutPage@62ddbd7e</td></tr>
+</table><p>
+</body>
+</html>
