@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-29T17:58:50 IST" name="Default suite" finished-at="2025-03-29T17:59:00 IST" duration-ms="10693">
+  <suite started-at="2025-04-01T23:54:35 IST" name="Default suite" finished-at="2025-04-01T23:54:45 IST" duration-ms="9261">
     <groups>
     </groups>
-    <test started-at="2025-03-29T17:58:50 IST" name="Default test" finished-at="2025-03-29T17:59:00 IST" duration-ms="10693">
-      <class name="expandTestingSeleniumPractice.V_KeyPresses">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@436813f3]" started-at="2025-03-29T17:58:50 IST" name="SetUp" finished-at="2025-03-29T17:58:51 IST" duration-ms="1436" status="PASS">
+    <test started-at="2025-04-01T23:54:35 IST" name="Default test" finished-at="2025-04-01T23:54:45 IST" duration-ms="9261">
+      <class name="expandTestingSeleniumPractice.ZA_Tooltips">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@436813f3]" started-at="2025-04-01T23:54:35 IST" name="SetUp" finished-at="2025-04-01T23:54:37 IST" duration-ms="1473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="KeyPress()[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@436813f3]" started-at="2025-03-29T17:58:51 IST" name="KeyPress" finished-at="2025-03-29T17:58:57 IST" duration-ms="5862" status="PASS">
+        <test-method signature="GetTooltips()[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@436813f3]" started-at="2025-04-01T23:54:37 IST" name="GetTooltips" finished-at="2025-04-01T23:54:41 IST" duration-ms="4415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KeyPress -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@436813f3]" started-at="2025-03-29T17:58:57 IST" name="TearDown" finished-at="2025-03-29T17:59:00 IST" duration-ms="3359" status="PASS">
+        </test-method> <!-- GetTooltips -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@436813f3]" started-at="2025-04-01T23:54:41 IST" name="TearDown" finished-at="2025-04-01T23:54:45 IST" duration-ms="3342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- expandTestingSeleniumPractice.V_KeyPresses -->
+      </class> <!-- expandTestingSeleniumPractice.ZA_Tooltips -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
