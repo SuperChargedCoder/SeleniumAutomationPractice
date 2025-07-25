@@ -10,19 +10,33 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
 	
 	public WebDriver driver;
 	public WebDriverWait wait;
-
+	
+	@Parameters("headless")
 	@BeforeMethod
-	public void SetUp() {
-		driver = new EdgeDriver();
+	public void SetUp(@Optional("false") String headless) {
+		EdgeOptions options = new EdgeOptions();
+		
+		if (headless.equalsIgnoreCase("true")) {
+            options.addArguments("--headless=new"); // Use "--headless" if using Chrome < 109
+            options.addArguments("--window-size=1920,1080");
+        }
+
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*");
+		
+		driver = new EdgeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 	}

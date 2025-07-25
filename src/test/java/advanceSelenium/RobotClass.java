@@ -13,7 +13,7 @@ import expandTestingSeleniumPractice.BaseTest;
 
 public class RobotClass extends BaseTest {
 	
-	@Test
+	@Test (enabled = false)
 	public void FileUpload() throws AWTException {
 		driver.get("https://practice.expandtesting.com/upload");
 		String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\BMW.jpg";

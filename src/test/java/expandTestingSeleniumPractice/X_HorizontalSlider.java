@@ -19,7 +19,7 @@ public class X_HorizontalSlider extends BaseTest {
 	}
 	
 
-	@Test
+	@Test (enabled = false)
 	public void HorizontalSlider() {
 		driver.get("https://www.fitpeo.com/revenue-calculator");
 		Actions a = new Actions(driver);

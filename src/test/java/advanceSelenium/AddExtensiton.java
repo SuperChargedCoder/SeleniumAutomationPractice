@@ -11,12 +11,14 @@ import org.testng.annotations.Test;
 public class AddExtensiton {
 	
 	@Test
-	public void AddExtensionInAutomatedBrowser() {
+	public void AddExtensionInAutomatedBrowser() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
 		options.addExtensions(new File("C:\\Users\\Shubham Chaurasia\\Downloads\\Edge Downloads\\SelectorsHub.crx"));
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		driver.get("https://booking.com");
+		Thread.sleep(2000);
+		driver.close();
 	}
 }

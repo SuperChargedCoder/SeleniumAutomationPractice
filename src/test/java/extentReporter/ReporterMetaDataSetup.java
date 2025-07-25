@@ -13,7 +13,7 @@ public class ReporterMetaDataSetup extends BaseTest {
 		String reportPath = System.getProperty("user.dir") + "\\ExtentReport\\AutomationReport.html";
 		
 		ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
-		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setDocumentTitle("TestAutomationReport");
 		reporter.config().setReportName("ExpandTesting.com Automation Test Report");
 		

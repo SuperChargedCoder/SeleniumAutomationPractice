@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="expandTestingSeleniumPractice.ZA_Tooltips">
+      <class name="advanceSelenium.BrokenLinkCheck">
         <methods>
-          <include name="GetTooltips"/>
           <include name="SetUp"/>
           <include name="TearDown"/>
+          <include name="AmazonBrokenLinkTest"/>
         </methods>
-      </class> <!-- expandTestingSeleniumPractice.ZA_Tooltips -->
+      </class> <!-- advanceSelenium.BrokenLinkCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
