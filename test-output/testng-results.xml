@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T21:41:41 IST" name="Default suite" finished-at="2025-07-25T21:42:04 IST" duration-ms="23106">
+  <suite started-at="2025-07-30T23:28:20 IST" name="Default suite" finished-at="2025-07-30T23:28:20 IST" duration-ms="301">
     <groups>
     </groups>
-    <test started-at="2025-07-25T21:41:41 IST" name="Default test" finished-at="2025-07-25T21:42:04 IST" duration-ms="23106">
-      <class name="advanceSelenium.BrokenLinkCheck">
-        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:advanceSelenium.BrokenLinkCheck@57a3af25]" started-at="2025-07-25T21:41:41 IST" name="SetUp" finished-at="2025-07-25T21:41:42 IST" duration-ms="1551" status="PASS">
+    <test started-at="2025-07-30T23:28:20 IST" name="Default test" finished-at="2025-07-30T23:28:20 IST" duration-ms="301">
+      <class name="testDataSetupTestNG.TestNGDataProviderJSON">
+        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[{functional=Selenium, programingLanguage=Java, framework=TestNG}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="AmazonBrokenLinkTest()[pri:0, instance:advanceSelenium.BrokenLinkCheck@57a3af25]" started-at="2025-07-25T21:41:42 IST" name="AmazonBrokenLinkTest" finished-at="2025-07-25T21:42:01 IST" duration-ms="19369" status="PASS">
+        </test-method> <!-- PrintJSONData -->
+        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{functional=Playwright, programingLanguage=JavaScript, framework=Cucumber}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AmazonBrokenLinkTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:advanceSelenium.BrokenLinkCheck@57a3af25]" started-at="2025-07-25T21:42:01 IST" name="TearDown" finished-at="2025-07-25T21:42:04 IST" duration-ms="2148" status="PASS">
+        </test-method> <!-- PrintJSONData -->
+        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{functional=RestAssured, programingLanguage=Core Java, framework=Cucumber + TestNG}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- advanceSelenium.BrokenLinkCheck -->
+        </test-method> <!-- PrintJSONData -->
+      </class> <!-- testDataSetupTestNG.TestNGDataProviderJSON -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

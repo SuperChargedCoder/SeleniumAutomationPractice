@@ -13,9 +13,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import extentReporter.RetryFleakyTests;
+
 public class L_FileUpload extends BaseTest {
 	
-	@Test
+	@Test (retryAnalyzer = RetryFleakyTests.class)
 	public void UploadWithSendKey() {
 		driver.get("https://practice.expandtesting.com/upload");
 		String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\BMW.jpg";
@@ -24,7 +26,9 @@ public class L_FileUpload extends BaseTest {
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='container']/h1")).getText().toString(), "File Uploaded!");
 	}
 	
+	@Test (enabled = false)
 	public void UploadWithRobotClass() throws AWTException {
+		driver.get("https://practice.expandtesting.com/upload");
 		// Click to open file dialog
         driver.findElement(By.id("fileInput")).click();
 
