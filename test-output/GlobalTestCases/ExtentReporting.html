@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ExtentReporting</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>28/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>32/2/4</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 05 22:37:06 IST 2025</td>
+<td>Started on:</td><td>Fri Aug 01 23:10:13 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>337 seconds (337426 ms)</td>
+<tr><td>Total time:</td><td>366 seconds (366638 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='expandTestingSeleniumPractice.L_FileUpload.UploadWithSendKey()'><b>UploadWithSendKey</b><br>Test class: expandTestingSeleniumPractice.L_FileUpload</td>
+<td title='expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage()'><b>HandlingNotificationMessage</b><br>Test class: expandTestingSeleniumPractice.O_NotificationMessage<br>Test method: This Functionality is inconsistent</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.93)
+  (Session info: MicrosoftEdge=138.0.3351.109)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57a1f6a8c143c1d56fc1017e83cd55e1, getElementText {id=f.0F3584B6829708371AC753CAE4DF3CAF.d.9A257DAA4EDD56389E60397707B3EAC6.e.20}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50158}, msedge: {msedgedriverVersion: 134.0.3124.93 (a9facff5fd6c..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50158/devtoo..., se:cdpVersion: 134.0.3124.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (57a1f6a8c143c1d56fc1017e83cd55e1)] -&gt; xpath: //div[@class=&apos;container&apos;]/h1]
-Session ID: 57a1f6a8c143c1d56fc1017e83cd55e1
+Command: [257c617b3bd6b839de431b707e03d562, isElementDisplayed {id=f.6579E9AE693A637F8F852CAFEDD18155.d.A04256C206F5F0389A1DBF8602ACC49B.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59845}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59845/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (257c617b3bd6b839de431b707e03d562)] -&gt; id: flash]
+Session ID: 257c617b3bd6b839de431b707e03d562
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -95,20 +95,25 @@ Session ID: 57a1f6a8c143c1d56fc1017e83cd55e1
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at expandTestingSeleniumPractice.L_FileUpload.UploadWithSendKey(L_FileUpload.java:24)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272257854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1272257854'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: MicrosoftEdge=134.0.3124.93)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190496961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190496961'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [57a1f6a8c143c1d56fc1017e83cd55e1, getElementText {id=f.0F3584B6829708371AC753CAE4DF3CAF.d.9A257DAA4EDD56389E60397707B3EAC6.e.20}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50158}, msedge: {msedgedriverVersion: 134.0.3124.93 (a9facff5fd6c..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50158/devtoo..., se:cdpVersion: 134.0.3124.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (57a1f6a8c143c1d56fc1017e83cd55e1)] -&gt; xpath: //div[@class=&apos;container&apos;]/h1]
-Session ID: 57a1f6a8c143c1d56fc1017e83cd55e1
+Command: [257c617b3bd6b839de431b707e03d562, isElementDisplayed {id=f.6579E9AE693A637F8F852CAFEDD18155.d.A04256C206F5F0389A1DBF8602ACC49B.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59845}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59845/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (257c617b3bd6b839de431b707e03d562)] -&gt; id: flash]
+Session ID: 257c617b3bd6b839de431b707e03d562
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -120,8 +125,466 @@ Session ID: 57a1f6a8c143c1d56fc1017e83cd55e1
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at expandTestingSeleniumPractice.L_FileUpload.UploadWithSendKey(L_FileUpload.java:24)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>expandTestingSeleniumPractice.O_NotificationMessage@6f03482</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.B_LoginPage.UserLogin()'><b>UserLogin</b><br>Test class: expandTestingSeleniumPractice.B_LoginPage</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (901, 1012)
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4df54073a2f003ded6fc30555f86aa82, clickElement {id=f.0BEBD2BF0E50370502451BE67BDBCAC8.d.F3448E1CF862C1384AD36FA68E387ACF.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58636}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58636/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (4df54073a2f003ded6fc30555f86aa82)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 4df54073a2f003ded6fc30555f86aa82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at expandTestingSeleniumPractice.B_LoginPage.UserLogin(B_LoginPage.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace951677655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951677655'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (901, 1012)
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4df54073a2f003ded6fc30555f86aa82, clickElement {id=f.0BEBD2BF0E50370502451BE67BDBCAC8.d.F3448E1CF862C1384AD36FA68E387ACF.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58636}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58636/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (4df54073a2f003ded6fc30555f86aa82)] -&gt; xpath: //button[text()=&apos;Login&apos;]]
+Session ID: 4df54073a2f003ded6fc30555f86aa82
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at expandTestingSeleniumPractice.B_LoginPage.UserLogin(B_LoginPage.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.B_LoginPage@229f66ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='expandTestingSeleniumPractice.F_AboutPage.SendEmailToDev()'><b>SendEmailToDev</b><br>Test class: expandTestingSeleniumPractice.F_AboutPage</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.F_AboutPage@3eb25e1a</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.K_FormValidation.FormFill()'><b>FormFill</b><br>Test class: expandTestingSeleniumPractice.K_FormValidation</td>
+<td></td>
+<td>6</td>
+<td>expandTestingSeleniumPractice.K_FormValidation@3eb738bb</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.ZA_Tooltips.GetTooltips()'><b>GetTooltips</b><br>Test class: expandTestingSeleniumPractice.ZA_Tooltips</td>
+<td></td>
+<td>6</td>
+<td>expandTestingSeleniumPractice.ZA_Tooltips@1a677343</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.D_DynamicTable.DynamicTableHandle()'><b>DynamicTableHandle</b><br>Test class: expandTestingSeleniumPractice.D_DynamicTable</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.D_DynamicTable@662ac478</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel()'><b>DownloadExcel</b><br>Test class: expandTestingSeleniumPractice.T_JQueryUiMenus</td>
+<td></td>
+<td>25</td>
+<td>expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.E_DynamicPaginatedTable.TestingTableShorting()'><b>TestingTableShorting</b><br>Test class: expandTestingSeleniumPractice.E_DynamicPaginatedTable</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.E_DynamicPaginatedTable@6743e411</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.A_WebInputPractice.provideData()'><b>provideData</b><br>Test class: expandTestingSeleniumPractice.A_WebInputPractice</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.A_WebInputPractice@3754a4bf</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.U_ContextMenus.ContextClick()'><b>ContextClick</b><br>Test class: expandTestingSeleniumPractice.U_ContextMenus</td>
+<td></td>
+<td>7</td>
+<td>expandTestingSeleniumPractice.U_ContextMenus@7eac9008</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.I_DragDrop.DragDrop()'><b>DragDrop</b><br>Test class: expandTestingSeleniumPractice.I_DragDrop</td>
+<td></td>
+<td>5</td>
+<td>expandTestingSeleniumPractice.I_DragDrop@f5958c9</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.H_RadioButtons.FavSportColour()'><b>FavSportColour</b><br>Test class: expandTestingSeleniumPractice.H_RadioButtons</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.H_RadioButtons@77c2494c</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.J_DragDrapInContainer.DragDrop()'><b>DragDrop</b><br>Test class: expandTestingSeleniumPractice.J_DragDrapInContainer</td>
+<td></td>
+<td>6</td>
+<td>expandTestingSeleniumPractice.J_DragDrapInContainer@233795b6</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.X_HorizontalSlider.HorizontalStepSlider()'><b>HorizontalStepSlider</b><br>Test class: expandTestingSeleniumPractice.X_HorizontalSlider<br>Test method: Using Keyboard Operations</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.V_KeyPresses.KeyPress()'><b>KeyPress</b><br>Test class: expandTestingSeleniumPractice.V_KeyPresses</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.V_KeyPresses@4116aac9</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsConfirm()'><b>JsConfirm</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.H_RadioButtons.DefaultValue()'><b>DefaultValue</b><br>Test class: expandTestingSeleniumPractice.H_RadioButtons</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.H_RadioButtons@77c2494c</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling.AletPopupHandling()'><b>AletPopupHandling</b><br>Test class: expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling<br>Test method: Using Robot Class</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsPrompt()'><b>JsPrompt</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.SwitchToAlert()'><b>SwitchToAlert</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.M_FileDownload.DownloadFileAtDefaultLocation()'><b>DownloadFileAtDefaultLocation</b><br>Test class: expandTestingSeleniumPractice.M_FileDownload</td>
+<td></td>
+<td>6</td>
+<td>expandTestingSeleniumPractice.M_FileDownload@1e800aaa</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.Q_Typos.FindTypo()'><b>FindTypo</b><br>Test class: expandTestingSeleniumPractice.Q_Typos</td>
+<td></td>
+<td>2</td>
+<td>expandTestingSeleniumPractice.Q_Typos@179ece50</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsAlert()'><b>JsAlert</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.X_HorizontalSlider.HorizontalSlider()'><b>HorizontalSlider</b><br>Test class: expandTestingSeleniumPractice.X_HorizontalSlider<br>Test method: getText() method was not working here so used getAttribute()</td>
+<td></td>
+<td>5</td>
+<td>expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.P_Autocomplete.AutoComplete()'><b>AutoComplete</b><br>Test class: expandTestingSeleniumPractice.P_Autocomplete</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.P_Autocomplete@9d5509a</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.R_SlowResourcesPage.snipperTimer()'><b>snipperTimer</b><br>Test class: expandTestingSeleniumPractice.R_SlowResourcesPage</td>
+<td></td>
+<td>11</td>
+<td>expandTestingSeleniumPractice.R_SlowResourcesPage@3b0090a4</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration()'><b>UserRegistration</b><br>Test class: expandTestingSeleniumPractice.C_RegistrationPractice</td>
+<td></td>
+<td>8</td>
+<td>expandTestingSeleniumPractice.C_RegistrationPractice@31190526</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling.ParameterisedURL()'><b>ParameterisedURL</b><br>Test class: expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling<br>Test method: Parameterised URL</td>
+<td></td>
+<td>0</td>
+<td>expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.Y_MouseHover.MouseAction()'><b>MouseAction</b><br>Test class: expandTestingSeleniumPractice.Y_MouseHover</td>
+<td></td>
+<td>5</td>
+<td>expandTestingSeleniumPractice.Y_MouseHover@6ed3ccb2</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration()'><b>UserRegistration</b><br>Test class: expandTestingSeleniumPractice.C_RegistrationPractice</td>
+<td></td>
+<td>6</td>
+<td>expandTestingSeleniumPractice.C_RegistrationPractice@31190526</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.M_FileDownload.DownloadFileAtCustomLocation()'><b>DownloadFileAtCustomLocation</b><br>Test class: expandTestingSeleniumPractice.M_FileDownload</td>
+<td></td>
+<td>13</td>
+<td>expandTestingSeleniumPractice.M_FileDownload@1e800aaa</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.W_Geolocation.GetLocation()'><b>GetLocation</b><br>Test class: expandTestingSeleniumPractice.W_Geolocation</td>
+<td></td>
+<td>4</td>
+<td>expandTestingSeleniumPractice.W_Geolocation@62ddbd7e</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.G_BrowserInformation.GetBrowserDetails()'><b>GetBrowserDetails</b><br>Test class: expandTestingSeleniumPractice.G_BrowserInformation</td>
+<td></td>
+<td>3</td>
+<td>expandTestingSeleniumPractice.G_BrowserInformation@477b4cdf</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.L_FileUpload.UploadWithSendKey()'><b>UploadWithSendKey</b><br>Test class: expandTestingSeleniumPractice.L_FileUpload</td>
+<td></td>
+<td>9</td>
+<td>expandTestingSeleniumPractice.L_FileUpload@5bda8e08</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel()'><b>DownloadExcel</b><br>Test class: expandTestingSeleniumPractice.T_JQueryUiMenus</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://practice.expandtesting.com/jqueryui/menu# has no size and location
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ddf7a6ec7942181fe9acbeb9c1536ce9, actions {actions=[org.openqa.selenium.interactions.Sequence@e162a35]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60409}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60409/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf7a6ec7942181fe9acbeb9c1536ce9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel(T_JQueryUiMenus.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace260345895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace260345895'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://practice.expandtesting.com/jqueryui/menu# has no size and location
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ddf7a6ec7942181fe9acbeb9c1536ce9, actions {actions=[org.openqa.selenium.interactions.Sequence@e162a35]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60409}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60409/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf7a6ec7942181fe9acbeb9c1536ce9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel(T_JQueryUiMenus.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage()'><b>HandlingNotificationMessage</b><br>Test class: expandTestingSeleniumPractice.O_NotificationMessage<br>Test method: This Functionality is inconsistent</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5b646f353b03982f1a6b471f4bffa8a6, isElementDisplayed {id=f.90EFDE3492E99BA230091C57B6A43782.d.16A174F050DAE80B281AAC505907AB68.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59746}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59746/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (5b646f353b03982f1a6b471f4bffa8a6)] -&gt; id: flash]
+Session ID: 5b646f353b03982f1a6b471f4bffa8a6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace861887593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861887593'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5b646f353b03982f1a6b471f4bffa8a6, isElementDisplayed {id=f.90EFDE3492E99BA230091C57B6A43782.d.16A174F050DAE80B281AAC505907AB68.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59746}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59746/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (5b646f353b03982f1a6b471f4bffa8a6)] -&gt; id: flash]
+Session ID: 5b646f353b03982f1a6b471f4bffa8a6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>expandTestingSeleniumPractice.O_NotificationMessage@6f03482</td></tr>
+<tr>
+<td title='expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration()'><b>UserRegistration</b><br>Test class: expandTestingSeleniumPractice.C_RegistrationPractice</td>
+<td><div><pre>java.lang.AssertionError: expected [An error occurred during registration. Please try again.] but found [Successfully registered, you can log in now.]
+	at expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration(C_RegistrationPractice.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783463798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783463798'><pre>java.lang.AssertionError: expected [An error occurred during registration. Please try again.] but found [Successfully registered, you can log in now.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration(C_RegistrationPractice.java:42)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -150,156 +613,50 @@ Session ID: 57a1f6a8c143c1d56fc1017e83cd55e1
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>5</td>
-<td>expandTestingSeleniumPractice.L_FileUpload@3eb25e1a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='expandTestingSeleniumPractice.B_LoginPage.UserLogin()'><b>UserLogin</b><br>Test class: expandTestingSeleniumPractice.B_LoginPage</td>
-<td></td>
-<td>5</td>
-<td>expandTestingSeleniumPractice.B_LoginPage@6989da5e</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.U_ContextMenus.ContextClick()'><b>ContextClick</b><br>Test class: expandTestingSeleniumPractice.U_ContextMenus</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.U_ContextMenus@6f03482</td></tr>
+<td>expandTestingSeleniumPractice.C_RegistrationPractice@31190526</td></tr>
 <tr>
 <td title='expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage()'><b>HandlingNotificationMessage</b><br>Test class: expandTestingSeleniumPractice.O_NotificationMessage<br>Test method: This Functionality is inconsistent</td>
-<td></td>
-<td>12</td>
-<td>expandTestingSeleniumPractice.O_NotificationMessage@f5958c9</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration()'><b>UserRegistration</b><br>Test class: expandTestingSeleniumPractice.C_RegistrationPractice</td>
-<td></td>
-<td>4</td>
-<td>expandTestingSeleniumPractice.C_RegistrationPractice@385c9627</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.I_DragDrop.DragDrop()'><b>DragDrop</b><br>Test class: expandTestingSeleniumPractice.I_DragDrop</td>
-<td></td>
-<td>4</td>
-<td>expandTestingSeleniumPractice.I_DragDrop@31190526</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.K_FormValidation.FormFill()'><b>FormFill</b><br>Test class: expandTestingSeleniumPractice.K_FormValidation</td>
-<td></td>
-<td>6</td>
-<td>expandTestingSeleniumPractice.K_FormValidation@6743e411</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.ZA_Tooltips.GetTooltips()'><b>GetTooltips</b><br>Test class: expandTestingSeleniumPractice.ZA_Tooltips</td>
-<td></td>
-<td>2</td>
-<td>expandTestingSeleniumPractice.ZA_Tooltips@1fa121e2</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.G_BrowserInformation.GetBrowserDetails()'><b>GetBrowserDetails</b><br>Test class: expandTestingSeleniumPractice.G_BrowserInformation</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.G_BrowserInformation@7dcf94f8</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.P_Autocomplete.AutoComplete()'><b>AutoComplete</b><br>Test class: expandTestingSeleniumPractice.P_Autocomplete</td>
-<td></td>
-<td>4</td>
-<td>expandTestingSeleniumPractice.P_Autocomplete@233795b6</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.A_WebInputPractice.provideData()'><b>provideData</b><br>Test class: expandTestingSeleniumPractice.A_WebInputPractice</td>
-<td></td>
-<td>2</td>
-<td>expandTestingSeleniumPractice.A_WebInputPractice@6b2ea799</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsConfirm()'><b>JsConfirm</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@1e800aaa</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.H_RadioButtons.DefaultValue()'><b>DefaultValue</b><br>Test class: expandTestingSeleniumPractice.H_RadioButtons</td>
-<td></td>
+<td><div><pre>java.lang.AssertionError: expected [Action successful] but found [Action unsuccessful, please try again]
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058879732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058879732'><pre>java.lang.AssertionError: expected [Action successful] but found [Action unsuccessful, please try again]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>5</td>
-<td>expandTestingSeleniumPractice.H_RadioButtons@229f66ed</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.H_RadioButtons.FavSportColour()'><b>FavSportColour</b><br>Test class: expandTestingSeleniumPractice.H_RadioButtons</td>
-<td></td>
-<td>2</td>
-<td>expandTestingSeleniumPractice.H_RadioButtons@229f66ed</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.D_DynamicTable.DynamicTableHandle()'><b>DynamicTableHandle</b><br>Test class: expandTestingSeleniumPractice.D_DynamicTable</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.D_DynamicTable@139982de</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling.ParameterisedURL()'><b>ParameterisedURL</b><br>Test class: expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling<br>Test method: Parameterised URL</td>
-<td></td>
-<td>0</td>
-<td>expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@77c2494c</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.M_FileDownload.DownloadFileAtCustomLocation()'><b>DownloadFileAtCustomLocation</b><br>Test class: expandTestingSeleniumPractice.M_FileDownload</td>
-<td></td>
-<td>15</td>
-<td>expandTestingSeleniumPractice.M_FileDownload@477b4cdf</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.J_DragDrapInContainer.DragDrop()'><b>DragDrop</b><br>Test class: expandTestingSeleniumPractice.J_DragDrapInContainer</td>
-<td></td>
-<td>5</td>
-<td>expandTestingSeleniumPractice.J_DragDrapInContainer@662ac478</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.W_Geolocation.GetLocation()'><b>GetLocation</b><br>Test class: expandTestingSeleniumPractice.W_Geolocation</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.W_Geolocation@179ece50</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.Q_Typos.FindTypo()'><b>FindTypo</b><br>Test class: expandTestingSeleniumPractice.Q_Typos</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.Q_Typos@3eb738bb</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.F_AboutPage.SendEmailToDev()'><b>SendEmailToDev</b><br>Test class: expandTestingSeleniumPractice.F_AboutPage</td>
-<td></td>
-<td>9</td>
-<td>expandTestingSeleniumPractice.F_AboutPage@217ed35e</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling.AletPopupHandling()'><b>AletPopupHandling</b><br>Test class: expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling<br>Test method: Using Robot Class</td>
-<td></td>
-<td>2</td>
-<td>expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@77c2494c</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.V_KeyPresses.KeyPress()'><b>KeyPress</b><br>Test class: expandTestingSeleniumPractice.V_KeyPresses</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.V_KeyPresses@9d5509a</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsAlert()'><b>JsAlert</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@1e800aaa</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.S_JavaScriptDialogs.JsPrompt()'><b>JsPrompt</b><br>Test class: expandTestingSeleniumPractice.S_JavaScriptDialogs</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.S_JavaScriptDialogs@1e800aaa</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.Y_MouseHover.MouseAction()'><b>MouseAction</b><br>Test class: expandTestingSeleniumPractice.Y_MouseHover</td>
-<td></td>
-<td>5</td>
-<td>expandTestingSeleniumPractice.Y_MouseHover@3cd3e762</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.R_SlowResourcesPage.snipperTimer()'><b>snipperTimer</b><br>Test class: expandTestingSeleniumPractice.R_SlowResourcesPage</td>
-<td></td>
-<td>11</td>
-<td>expandTestingSeleniumPractice.R_SlowResourcesPage@5bda8e08</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel()'><b>DownloadExcel</b><br>Test class: expandTestingSeleniumPractice.T_JQueryUiMenus</td>
-<td></td>
-<td>10</td>
-<td>expandTestingSeleniumPractice.T_JQueryUiMenus@185a6e9</td></tr>
-<tr>
-<td title='expandTestingSeleniumPractice.M_FileDownload.DownloadFileAtDefaultLocation()'><b>DownloadFileAtDefaultLocation</b><br>Test class: expandTestingSeleniumPractice.M_FileDownload</td>
-<td></td>
-<td>3</td>
-<td>expandTestingSeleniumPractice.M_FileDownload@477b4cdf</td></tr>
+<td>expandTestingSeleniumPractice.O_NotificationMessage@6f03482</td></tr>
 </table><p>
 </body>
 </html>

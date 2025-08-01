@@ -1,46 +1,1122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="4" ignored="2" total="40" passed="32" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T23:28:20 IST" name="Default suite" finished-at="2025-07-30T23:28:20 IST" duration-ms="301">
+  <suite started-at="2025-08-01T23:10:13 IST" name="GlobalTestCases" finished-at="2025-08-01T23:16:20 IST" duration-ms="366638">
     <groups>
+      <group name="defaultDriver">
+        <method signature="M_FileDownload.DownloadFileAtDefaultLocation()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" name="DownloadFileAtDefaultLocation" class="expandTestingSeleniumPractice.M_FileDownload"/>
+      </group> <!-- defaultDriver -->
     </groups>
-    <test started-at="2025-07-30T23:28:20 IST" name="Default test" finished-at="2025-07-30T23:28:20 IST" duration-ms="301">
-      <class name="testDataSetupTestNG.TestNGDataProviderJSON">
-        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="8" status="PASS">
+    <test started-at="2025-08-01T23:10:13 IST" name="ExtentReporting" finished-at="2025-08-01T23:16:20 IST" duration-ms="366638">
+      <class name="expandTestingSeleniumPractice.X_HorizontalSlider">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:45 IST" name="SetUp" finished-at="2025-08-01T23:15:46 IST" duration-ms="1062" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{functional=Selenium, programingLanguage=Java, framework=TestNG}]]>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrintJSONData -->
-        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- SetUp -->
+        <test-method signature="HorizontalSlider()[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:46 IST" name="HorizontalSlider" description="getText() method was not working here so used getAttribute()" finished-at="2025-08-01T23:15:51 IST" duration-ms="5044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HorizontalSlider -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:51 IST" name="TearDown" finished-at="2025-08-01T23:15:53 IST" duration-ms="2171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:53 IST" name="SetUp" finished-at="2025-08-01T23:15:55 IST" duration-ms="1923" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{functional=Playwright, programingLanguage=JavaScript, framework=Cucumber}]]>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrintJSONData -->
-        <test-method signature="PrintJSONData(java.util.HashMap)[pri:0, instance:testDataSetupTestNG.TestNGDataProviderJSON@8f4ea7c]" started-at="2025-07-30T23:28:20 IST" name="PrintJSONData" data-provider="JSONDataReader" finished-at="2025-07-30T23:28:20 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- SetUp -->
+        <test-method signature="HorizontalStepSlider()[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:55 IST" name="HorizontalStepSlider" description="Using Keyboard Operations" finished-at="2025-08-01T23:15:59 IST" duration-ms="3654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HorizontalStepSlider -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.X_HorizontalSlider@74e52ef6]" started-at="2025-08-01T23:15:59 IST" name="TearDown" finished-at="2025-08-01T23:16:01 IST" duration-ms="2168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.X_HorizontalSlider -->
+      <class name="expandTestingSeleniumPractice.I_DragDrop">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.I_DragDrop@f5958c9]" started-at="2025-08-01T23:11:44 IST" name="SetUp" finished-at="2025-08-01T23:11:45 IST" duration-ms="963" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{functional=RestAssured, programingLanguage=Core Java, framework=Cucumber + TestNG}]]>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PrintJSONData -->
-      </class> <!-- testDataSetupTestNG.TestNGDataProviderJSON -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- SetUp -->
+        <test-method signature="DragDrop()[pri:0, instance:expandTestingSeleniumPractice.I_DragDrop@f5958c9]" started-at="2025-08-01T23:11:45 IST" name="DragDrop" finished-at="2025-08-01T23:11:51 IST" duration-ms="5547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragDrop -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.I_DragDrop@f5958c9]" started-at="2025-08-01T23:11:51 IST" name="TearDown" finished-at="2025-08-01T23:11:53 IST" duration-ms="2161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.I_DragDrop -->
+      <class name="expandTestingSeleniumPractice.Q_Typos">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.Q_Typos@179ece50]" started-at="2025-08-01T23:13:44 IST" name="SetUp" finished-at="2025-08-01T23:13:45 IST" duration-ms="1086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="FindTypo()[pri:0, instance:expandTestingSeleniumPractice.Q_Typos@179ece50]" started-at="2025-08-01T23:13:45 IST" name="FindTypo" finished-at="2025-08-01T23:13:48 IST" duration-ms="2834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindTypo -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.Q_Typos@179ece50]" started-at="2025-08-01T23:13:48 IST" name="TearDown" finished-at="2025-08-01T23:13:50 IST" duration-ms="2168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.Q_Typos -->
+      <class name="expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:12:53 IST" name="SetUp" finished-at="2025-08-01T23:12:55 IST" duration-ms="1211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="AletPopupHandling()[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:12:55 IST" name="AletPopupHandling" description="Using Robot Class" finished-at="2025-08-01T23:12:58 IST" duration-ms="3405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AletPopupHandling -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:12:59 IST" name="TearDown" finished-at="2025-08-01T23:13:01 IST" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:13:01 IST" name="SetUp" finished-at="2025-08-01T23:13:02 IST" duration-ms="961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ParameterisedURL()[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:13:02 IST" name="ParameterisedURL" description="Parameterised URL" finished-at="2025-08-01T23:13:03 IST" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParameterisedURL -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling@185a6e9]" started-at="2025-08-01T23:13:03 IST" name="TearDown" finished-at="2025-08-01T23:13:05 IST" duration-ms="2146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.N_SecureFileDownloadAlertHandling -->
+      <class name="expandTestingSeleniumPractice.O_NotificationMessage">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:05 IST" name="SetUp" finished-at="2025-08-01T23:13:06 IST" duration-ms="945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method retried="true" signature="HandlingNotificationMessage()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:06 IST" name="HandlingNotificationMessage" description="This Functionality is inconsistent" finished-at="2025-08-01T23:13:14 IST" duration-ms="7678" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5b646f353b03982f1a6b471f4bffa8a6, isElementDisplayed {id=f.90EFDE3492E99BA230091C57B6A43782.d.16A174F050DAE80B281AAC505907AB68.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59746}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59746/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (5b646f353b03982f1a6b471f4bffa8a6)] -> id: flash]
+Session ID: 5b646f353b03982f1a6b471f4bffa8a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5b646f353b03982f1a6b471f4bffa8a6, isElementDisplayed {id=f.90EFDE3492E99BA230091C57B6A43782.d.16A174F050DAE80B281AAC505907AB68.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59746}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59746/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (5b646f353b03982f1a6b471f4bffa8a6)] -> id: flash]
+Session ID: 5b646f353b03982f1a6b471f4bffa8a6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlingNotificationMessage -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:14 IST" name="TearDown" finished-at="2025-08-01T23:13:16 IST" duration-ms="2121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:16 IST" name="SetUp" finished-at="2025-08-01T23:13:17 IST" duration-ms="997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method retried="true" signature="HandlingNotificationMessage()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:17 IST" name="HandlingNotificationMessage" description="This Functionality is inconsistent" finished-at="2025-08-01T23:13:22 IST" duration-ms="5812" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Action successful] but found [Action unsuccessful, please try again]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Action successful] but found [Action unsuccessful, please try again]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlingNotificationMessage -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:22 IST" name="TearDown" finished-at="2025-08-01T23:13:25 IST" duration-ms="2144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:25 IST" name="SetUp" finished-at="2025-08-01T23:13:26 IST" duration-ms="1000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="HandlingNotificationMessage()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:26 IST" name="HandlingNotificationMessage" description="This Functionality is inconsistent" finished-at="2025-08-01T23:13:35 IST" duration-ms="9250" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [257c617b3bd6b839de431b707e03d562, isElementDisplayed {id=f.6579E9AE693A637F8F852CAFEDD18155.d.A04256C206F5F0389A1DBF8602ACC49B.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59845}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59845/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (257c617b3bd6b839de431b707e03d562)] -> id: flash]
+Session ID: 257c617b3bd6b839de431b707e03d562]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=138.0.3351.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [257c617b3bd6b839de431b707e03d562, isElementDisplayed {id=f.6579E9AE693A637F8F852CAFEDD18155.d.A04256C206F5F0389A1DBF8602ACC49B.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59845}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59845/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (257c617b3bd6b839de431b707e03d562)] -> id: flash]
+Session ID: 257c617b3bd6b839de431b707e03d562
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at expandTestingSeleniumPractice.BaseTest.WaitForVisibility(BaseTest.java:67)
+at expandTestingSeleniumPractice.O_NotificationMessage.HandlingNotificationMessage(O_NotificationMessage.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandlingNotificationMessage -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.O_NotificationMessage@6f03482]" started-at="2025-08-01T23:13:35 IST" name="TearDown" finished-at="2025-08-01T23:13:37 IST" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.O_NotificationMessage -->
+      <class name="expandTestingSeleniumPractice.Y_MouseHover">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.Y_MouseHover@6ed3ccb2]" started-at="2025-08-01T23:16:01 IST" name="SetUp" finished-at="2025-08-01T23:16:02 IST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="MouseAction()[pri:0, instance:expandTestingSeleniumPractice.Y_MouseHover@6ed3ccb2]" started-at="2025-08-01T23:16:02 IST" name="MouseAction" finished-at="2025-08-01T23:16:07 IST" duration-ms="5073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseAction -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.Y_MouseHover@6ed3ccb2]" started-at="2025-08-01T23:16:07 IST" name="TearDown" finished-at="2025-08-01T23:16:10 IST" duration-ms="2245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.Y_MouseHover -->
+      <class name="expandTestingSeleniumPractice.H_RadioButtons">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:30 IST" name="SetUp" finished-at="2025-08-01T23:11:31 IST" duration-ms="1092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DefaultValue()[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:31 IST" name="DefaultValue" finished-at="2025-08-01T23:11:35 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefaultValue -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:35 IST" name="TearDown" finished-at="2025-08-01T23:11:37 IST" duration-ms="2251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:37 IST" name="SetUp" finished-at="2025-08-01T23:11:38 IST" duration-ms="970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="FavSportColour()[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:38 IST" name="FavSportColour" finished-at="2025-08-01T23:11:42 IST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FavSportColour -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.H_RadioButtons@77c2494c]" started-at="2025-08-01T23:11:42 IST" name="TearDown" finished-at="2025-08-01T23:11:44 IST" duration-ms="2128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.H_RadioButtons -->
+      <class name="expandTestingSeleniumPractice.ZA_Tooltips">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@1a677343]" started-at="2025-08-01T23:16:10 IST" name="SetUp" finished-at="2025-08-01T23:16:11 IST" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="GetTooltips()[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@1a677343]" started-at="2025-08-01T23:16:11 IST" name="GetTooltips" finished-at="2025-08-01T23:16:18 IST" duration-ms="6972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetTooltips -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.ZA_Tooltips@1a677343]" started-at="2025-08-01T23:16:18 IST" name="TearDown" finished-at="2025-08-01T23:16:20 IST" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.ZA_Tooltips -->
+      <class name="expandTestingSeleniumPractice.A_WebInputPractice">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.A_WebInputPractice@3754a4bf]" started-at="2025-08-01T23:10:13 IST" name="SetUp" finished-at="2025-08-01T23:10:15 IST" duration-ms="1588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="provideData()[pri:0, instance:expandTestingSeleniumPractice.A_WebInputPractice@3754a4bf]" started-at="2025-08-01T23:10:15 IST" name="provideData" finished-at="2025-08-01T23:10:19 IST" duration-ms="4202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideData -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.A_WebInputPractice@3754a4bf]" started-at="2025-08-01T23:10:19 IST" name="TearDown" finished-at="2025-08-01T23:10:22 IST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.A_WebInputPractice -->
+      <class name="expandTestingSeleniumPractice.E_DynamicPaginatedTable">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.E_DynamicPaginatedTable@6743e411]" started-at="2025-08-01T23:11:05 IST" name="SetUp" finished-at="2025-08-01T23:11:06 IST" duration-ms="998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="TestingTableShorting()[pri:0, instance:expandTestingSeleniumPractice.E_DynamicPaginatedTable@6743e411]" started-at="2025-08-01T23:11:06 IST" name="TestingTableShorting" finished-at="2025-08-01T23:11:11 IST" duration-ms="4644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestingTableShorting -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.E_DynamicPaginatedTable@6743e411]" started-at="2025-08-01T23:11:11 IST" name="TearDown" finished-at="2025-08-01T23:11:13 IST" duration-ms="2128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.E_DynamicPaginatedTable -->
+      <class name="expandTestingSeleniumPractice.L_FileUpload">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.L_FileUpload@5bda8e08]" started-at="2025-08-01T23:12:13 IST" name="SetUp" finished-at="2025-08-01T23:12:14 IST" duration-ms="1116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="UploadWithSendKey()[pri:0, instance:expandTestingSeleniumPractice.L_FileUpload@5bda8e08]" started-at="2025-08-01T23:12:14 IST" name="UploadWithSendKey" finished-at="2025-08-01T23:12:23 IST" duration-ms="9499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadWithSendKey -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.L_FileUpload@5bda8e08]" started-at="2025-08-01T23:12:23 IST" name="TearDown" finished-at="2025-08-01T23:12:26 IST" duration-ms="2179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.L_FileUpload -->
+      <class name="expandTestingSeleniumPractice.F_AboutPage">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.F_AboutPage@3eb25e1a]" started-at="2025-08-01T23:11:13 IST" name="SetUp" finished-at="2025-08-01T23:11:14 IST" duration-ms="989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="SendEmailToDev()[pri:0, instance:expandTestingSeleniumPractice.F_AboutPage@3eb25e1a]" started-at="2025-08-01T23:11:14 IST" name="SendEmailToDev" finished-at="2025-08-01T23:11:19 IST" duration-ms="4856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendEmailToDev -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.F_AboutPage@3eb25e1a]" started-at="2025-08-01T23:11:21 IST" name="TearDown" finished-at="2025-08-01T23:11:23 IST" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.F_AboutPage -->
+      <class name="expandTestingSeleniumPractice.R_SlowResourcesPage">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.R_SlowResourcesPage@3b0090a4]" started-at="2025-08-01T23:13:50 IST" name="SetUp" finished-at="2025-08-01T23:13:52 IST" duration-ms="2173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="snipperTimer()[pri:0, instance:expandTestingSeleniumPractice.R_SlowResourcesPage@3b0090a4]" started-at="2025-08-01T23:13:52 IST" name="snipperTimer" finished-at="2025-08-01T23:14:03 IST" duration-ms="11268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- snipperTimer -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.R_SlowResourcesPage@3b0090a4]" started-at="2025-08-01T23:14:04 IST" name="TearDown" finished-at="2025-08-01T23:14:06 IST" duration-ms="2233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.R_SlowResourcesPage -->
+      <class name="expandTestingSeleniumPractice.V_KeyPresses">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@4116aac9]" started-at="2025-08-01T23:15:29 IST" name="SetUp" finished-at="2025-08-01T23:15:30 IST" duration-ms="1010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="KeyPress()[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@4116aac9]" started-at="2025-08-01T23:15:30 IST" name="KeyPress" finished-at="2025-08-01T23:15:35 IST" duration-ms="4664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyPress -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.V_KeyPresses@4116aac9]" started-at="2025-08-01T23:15:35 IST" name="TearDown" finished-at="2025-08-01T23:15:37 IST" duration-ms="2226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.V_KeyPresses -->
+      <class name="expandTestingSeleniumPractice.K_FormValidation">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.K_FormValidation@3eb738bb]" started-at="2025-08-01T23:12:03 IST" name="SetUp" finished-at="2025-08-01T23:12:04 IST" duration-ms="1026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="FormFill()[pri:0, instance:expandTestingSeleniumPractice.K_FormValidation@3eb738bb]" started-at="2025-08-01T23:12:04 IST" name="FormFill" finished-at="2025-08-01T23:12:10 IST" duration-ms="6834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FormFill -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.K_FormValidation@3eb738bb]" started-at="2025-08-01T23:12:11 IST" name="TearDown" finished-at="2025-08-01T23:12:13 IST" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.K_FormValidation -->
+      <class name="expandTestingSeleniumPractice.C_RegistrationPractice">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:29 IST" name="SetUp" finished-at="2025-08-01T23:10:30 IST" duration-ms="1062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method retried="true" signature="UserRegistration()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:30 IST" name="UserRegistration" finished-at="2025-08-01T23:10:35 IST" duration-ms="5178" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [An error occurred during registration. Please try again.] but found [Successfully registered, you can log in now.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [An error occurred during registration. Please try again.] but found [Successfully registered, you can log in now.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at expandTestingSeleniumPractice.C_RegistrationPractice.UserRegistration(C_RegistrationPractice.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistration -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:35 IST" name="TearDown" finished-at="2025-08-01T23:10:37 IST" duration-ms="2147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:37 IST" name="SetUp" finished-at="2025-08-01T23:10:38 IST" duration-ms="948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="UserRegistration()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:38 IST" name="UserRegistration" finished-at="2025-08-01T23:10:45 IST" duration-ms="6914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistration -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:45 IST" name="TearDown" finished-at="2025-08-01T23:10:47 IST" duration-ms="2210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:47 IST" name="SetUp" finished-at="2025-08-01T23:10:49 IST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="UserRegistration()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:49 IST" name="UserRegistration" finished-at="2025-08-01T23:10:57 IST" duration-ms="8082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistration -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.C_RegistrationPractice@31190526]" started-at="2025-08-01T23:10:57 IST" name="TearDown" finished-at="2025-08-01T23:10:59 IST" duration-ms="2160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.C_RegistrationPractice -->
+      <class name="expandTestingSeleniumPractice.B_LoginPage">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.B_LoginPage@229f66ed]" started-at="2025-08-01T23:10:22 IST" name="SetUp" finished-at="2025-08-01T23:10:23 IST" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="UserLogin()[pri:0, instance:expandTestingSeleniumPractice.B_LoginPage@229f66ed]" started-at="2025-08-01T23:10:23 IST" name="UserLogin" finished-at="2025-08-01T23:10:27 IST" duration-ms="3750" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (901, 1012)
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4df54073a2f003ded6fc30555f86aa82, clickElement {id=f.0BEBD2BF0E50370502451BE67BDBCAC8.d.F3448E1CF862C1384AD36FA68E387ACF.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58636}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58636/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (4df54073a2f003ded6fc30555f86aa82)] -> xpath: //button[text()='Login']]
+Session ID: 4df54073a2f003ded6fc30555f86aa82]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (901, 1012)
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [4df54073a2f003ded6fc30555f86aa82, clickElement {id=f.0BEBD2BF0E50370502451BE67BDBCAC8.d.F3448E1CF862C1384AD36FA68E387ACF.e.12}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58636}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58636/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (4df54073a2f003ded6fc30555f86aa82)] -> xpath: //button[text()='Login']]
+Session ID: 4df54073a2f003ded6fc30555f86aa82
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at expandTestingSeleniumPractice.B_LoginPage.UserLogin(B_LoginPage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.B_LoginPage@229f66ed]" started-at="2025-08-01T23:10:27 IST" name="TearDown" finished-at="2025-08-01T23:10:29 IST" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.B_LoginPage -->
+      <class name="expandTestingSeleniumPractice.S_JavaScriptDialogs">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:06 IST" name="SetUp" finished-at="2025-08-01T23:14:07 IST" duration-ms="1379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="SwitchToAlert()[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:07 IST" name="SwitchToAlert" finished-at="2025-08-01T23:14:12 IST" duration-ms="4842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwitchToAlert -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:12 IST" name="TearDown" finished-at="2025-08-01T23:14:14 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:14 IST" name="SetUp" finished-at="2025-08-01T23:14:16 IST" duration-ms="1337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="JsAlert()[pri:1, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:16 IST" name="JsAlert" finished-at="2025-08-01T23:14:19 IST" duration-ms="3305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsAlert -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:19 IST" name="TearDown" finished-at="2025-08-01T23:14:21 IST" duration-ms="2115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:21 IST" name="SetUp" finished-at="2025-08-01T23:14:22 IST" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="JsConfirm()[pri:2, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:22 IST" name="JsConfirm" finished-at="2025-08-01T23:14:26 IST" duration-ms="3650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsConfirm -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:26 IST" name="TearDown" finished-at="2025-08-01T23:14:29 IST" duration-ms="2221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:29 IST" name="SetUp" finished-at="2025-08-01T23:14:30 IST" duration-ms="1058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="JsPrompt()[pri:3, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:30 IST" name="JsPrompt" finished-at="2025-08-01T23:14:34 IST" duration-ms="4095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsPrompt -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.S_JavaScriptDialogs@3cd3e762]" started-at="2025-08-01T23:14:34 IST" name="TearDown" finished-at="2025-08-01T23:14:36 IST" duration-ms="2221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.S_JavaScriptDialogs -->
+      <class name="expandTestingSeleniumPractice.U_ContextMenus">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.U_ContextMenus@7eac9008]" started-at="2025-08-01T23:15:18 IST" name="SetUp" finished-at="2025-08-01T23:15:19 IST" duration-ms="1140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ContextClick()[pri:0, instance:expandTestingSeleniumPractice.U_ContextMenus@7eac9008]" started-at="2025-08-01T23:15:19 IST" name="ContextClick" finished-at="2025-08-01T23:15:27 IST" duration-ms="7977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextClick -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.U_ContextMenus@7eac9008]" started-at="2025-08-01T23:15:27 IST" name="TearDown" finished-at="2025-08-01T23:15:29 IST" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.U_ContextMenus -->
+      <class name="expandTestingSeleniumPractice.M_FileDownload">
+        <test-method signature="DownloadFileAtCustomLocation()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" started-at="2025-08-01T23:12:26 IST" name="DownloadFileAtCustomLocation" finished-at="2025-08-01T23:12:39 IST" duration-ms="13164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadFileAtCustomLocation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" started-at="2025-08-01T23:12:39 IST" name="TearDown" finished-at="2025-08-01T23:12:41 IST" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" started-at="2025-08-01T23:12:41 IST" name="SetUp" finished-at="2025-08-01T23:12:45 IST" duration-ms="4016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DownloadFileAtDefaultLocation()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" started-at="2025-08-01T23:12:45 IST" name="DownloadFileAtDefaultLocation" finished-at="2025-08-01T23:12:51 IST" duration-ms="6139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadFileAtDefaultLocation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.M_FileDownload@1e800aaa]" started-at="2025-08-01T23:12:51 IST" name="TearDown" finished-at="2025-08-01T23:12:53 IST" duration-ms="2169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.M_FileDownload -->
+      <class name="expandTestingSeleniumPractice.D_DynamicTable">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.D_DynamicTable@662ac478]" started-at="2025-08-01T23:10:59 IST" name="SetUp" finished-at="2025-08-01T23:11:00 IST" duration-ms="1075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DynamicTableHandle()[pri:0, instance:expandTestingSeleniumPractice.D_DynamicTable@662ac478]" started-at="2025-08-01T23:11:00 IST" name="DynamicTableHandle" finished-at="2025-08-01T23:11:03 IST" duration-ms="3195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicTableHandle -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.D_DynamicTable@662ac478]" started-at="2025-08-01T23:11:03 IST" name="TearDown" finished-at="2025-08-01T23:11:05 IST" duration-ms="2211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.D_DynamicTable -->
+      <class name="expandTestingSeleniumPractice.T_JQueryUiMenus">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:14:36 IST" name="SetUp" finished-at="2025-08-01T23:14:37 IST" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method retried="true" signature="DownloadExcel()[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:14:37 IST" name="DownloadExcel" finished-at="2025-08-01T23:14:46 IST" duration-ms="9241" status="SKIP">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: https://practice.expandtesting.com/jqueryui/menu# has no size and location
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ddf7a6ec7942181fe9acbeb9c1536ce9, actions {actions=[org.openqa.selenium.interactions.Sequence@e162a35]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60409}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60409/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf7a6ec7942181fe9acbeb9c1536ce9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: https://practice.expandtesting.com/jqueryui/menu# has no size and location
+  (Session info: MicrosoftEdge=138.0.3351.109)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ddf7a6ec7942181fe9acbeb9c1536ce9, actions {actions=[org.openqa.selenium.interactions.Sequence@e162a35]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.109, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60409}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60409/devtoo..., se:cdpVersion: 138.0.3351.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf7a6ec7942181fe9acbeb9c1536ce9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+at expandTestingSeleniumPractice.T_JQueryUiMenus.DownloadExcel(T_JQueryUiMenus.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadExcel -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:14:46 IST" name="TearDown" finished-at="2025-08-01T23:14:49 IST" duration-ms="2096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:14:49 IST" name="SetUp" finished-at="2025-08-01T23:14:50 IST" duration-ms="1027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DownloadExcel()[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:14:50 IST" name="DownloadExcel" finished-at="2025-08-01T23:15:16 IST" duration-ms="25942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadExcel -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.T_JQueryUiMenus@1fa121e2]" started-at="2025-08-01T23:15:16 IST" name="TearDown" finished-at="2025-08-01T23:15:18 IST" duration-ms="2177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.T_JQueryUiMenus -->
+      <class name="expandTestingSeleniumPractice.G_BrowserInformation">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.G_BrowserInformation@477b4cdf]" started-at="2025-08-01T23:11:23 IST" name="SetUp" finished-at="2025-08-01T23:11:24 IST" duration-ms="1155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="GetBrowserDetails()[pri:0, instance:expandTestingSeleniumPractice.G_BrowserInformation@477b4cdf]" started-at="2025-08-01T23:11:24 IST" name="GetBrowserDetails" finished-at="2025-08-01T23:11:28 IST" duration-ms="3839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBrowserDetails -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.G_BrowserInformation@477b4cdf]" started-at="2025-08-01T23:11:28 IST" name="TearDown" finished-at="2025-08-01T23:11:30 IST" duration-ms="2184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.G_BrowserInformation -->
+      <class name="expandTestingSeleniumPractice.W_Geolocation">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.W_Geolocation@62ddbd7e]" started-at="2025-08-01T23:15:37 IST" name="SetUp" finished-at="2025-08-01T23:15:38 IST" duration-ms="1059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="GetLocation()[pri:0, instance:expandTestingSeleniumPractice.W_Geolocation@62ddbd7e]" started-at="2025-08-01T23:15:38 IST" name="GetLocation" finished-at="2025-08-01T23:15:43 IST" duration-ms="4114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLocation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.W_Geolocation@62ddbd7e]" started-at="2025-08-01T23:15:43 IST" name="TearDown" finished-at="2025-08-01T23:15:45 IST" duration-ms="2165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.W_Geolocation -->
+      <class name="expandTestingSeleniumPractice.P_Autocomplete">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.P_Autocomplete@9d5509a]" started-at="2025-08-01T23:13:37 IST" name="SetUp" finished-at="2025-08-01T23:13:38 IST" duration-ms="1027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="AutoComplete()[pri:0, instance:expandTestingSeleniumPractice.P_Autocomplete@9d5509a]" started-at="2025-08-01T23:13:38 IST" name="AutoComplete" finished-at="2025-08-01T23:13:41 IST" duration-ms="3184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutoComplete -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.P_Autocomplete@9d5509a]" started-at="2025-08-01T23:13:41 IST" name="TearDown" finished-at="2025-08-01T23:13:44 IST" duration-ms="2238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.P_Autocomplete -->
+      <class name="expandTestingSeleniumPractice.J_DragDrapInContainer">
+        <test-method is-config="true" signature="SetUp(java.lang.String)[pri:0, instance:expandTestingSeleniumPractice.J_DragDrapInContainer@233795b6]" started-at="2025-08-01T23:11:53 IST" name="SetUp" finished-at="2025-08-01T23:11:54 IST" duration-ms="1106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DragDrop()[pri:0, instance:expandTestingSeleniumPractice.J_DragDrapInContainer@233795b6]" started-at="2025-08-01T23:11:54 IST" name="DragDrop" finished-at="2025-08-01T23:12:00 IST" duration-ms="6250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragDrop -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:expandTestingSeleniumPractice.J_DragDrapInContainer@233795b6]" started-at="2025-08-01T23:12:00 IST" name="TearDown" finished-at="2025-08-01T23:12:03 IST" duration-ms="2180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- expandTestingSeleniumPractice.J_DragDrapInContainer -->
+    </test> <!-- ExtentReporting -->
+  </suite> <!-- GlobalTestCases -->
 </testng-results>

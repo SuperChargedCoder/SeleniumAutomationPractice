@@ -30,7 +30,6 @@ public class N_SecureFileDownloadAlertHandling extends BaseTest {
         robot.keyRelease(KeyEvent.VK_TAB);
         robot.keyPress(KeyEvent.VK_ENTER); // Press Enter to login
         robot.keyRelease(KeyEvent.VK_ENTER);
-		
 	}
 	
 	private static void typeText(Robot robot, String text) {

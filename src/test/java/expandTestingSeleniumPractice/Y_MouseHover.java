@@ -14,7 +14,7 @@ public class Y_MouseHover extends BaseTest {
 		Actions a = new Actions(driver);
 		WebElement userProfile = driver.findElement(By.xpath("//div[@class='figure'][3]"));
 		a.moveToElement(userProfile).build().perform();
+		WaitForVisibility(driver.findElement(By.xpath("//div[@class='figure'][3]/div/a")), driver);
 		a.click(driver.findElement(By.xpath("//div[@class='figure'][3]/div/a"))).build().perform();
-		
 	}
 }

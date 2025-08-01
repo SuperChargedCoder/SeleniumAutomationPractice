@@ -13,23 +13,23 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import extentReporter.RetryFleakyTests;
+
 public class O_NotificationMessage extends BaseTest {
 	
-	@Test (description = "This Functionality is inconsistent")
+	@Test (description = "This Functionality is inconsistent", retryAnalyzer = RetryFleakyTests.class)
 	public void HandlingNotificationMessage() {
 		driver.get("https://practice.expandtesting.com/notification-message-rendered");
 		LoadNewMessage(driver);
-		WaitForElementToAppear(driver, driver.findElement(By.id("flash")));
 		WebElement notificationMessage = driver.findElement(By.id("flash"));
-		Assert.assertEquals(notificationMessage.getText().toString(), "Action successful");
+		Assert.assertEquals(WaitForVisibility(notificationMessage, driver).getText().toString(), "Action successful");
 		do {
 			LoadNewMessage(driver);
-		} while (driver.findElement(By.id("flash")).getText().toString().equalsIgnoreCase("Action unsuccessful, please try again"));
+		} while (WaitForVisibility(notificationMessage, driver).getText().toString().equalsIgnoreCase("Action unsuccessful, please try again"));
 		try {
 			Assert.assertEquals(notificationMessage.getText().toString(), "Action unsuccessful, please try again");
 		} catch (Exception e) {
-			WaitForElementToAppear(driver, driver.findElement(By.id("flash")));
-			System.out.println(WaitForElementToAppear(driver, driver.findElement(By.id("flash"))));
+			System.out.println(WaitForVisibility(notificationMessage, driver).getText());
 		}
 	}
 	

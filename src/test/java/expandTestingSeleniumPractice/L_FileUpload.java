@@ -21,7 +21,7 @@ public class L_FileUpload extends BaseTest {
 	public void UploadWithSendKey() {
 		driver.get("https://practice.expandtesting.com/upload");
 		String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\BMW.jpg";
-		driver.findElement(By.id("fileInput")).sendKeys(filePath);
+		driver.findElement(By.id("fileInput")).sendKeys(filePath); //This works only if upload is with input HTML tag
 		driver.findElement(By.id("fileSubmit")).click();
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='container']/h1")).getText().toString(), "File Uploaded!");
 	}

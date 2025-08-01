@@ -5,12 +5,23 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import extentReporter.RetryFleakyTests;
+
 public class S_JavaScriptDialogs extends BaseTest {
+	
+	@Test (priority = 0)
+	public void SwitchToAlert() {
+		driver.get("https://practice.expandtesting.com/js-dialogs");
+		driver.findElement(By.id("js-alert")).click();
+		driver.switchTo().alert().accept();
+	}
 	
 	@Test (priority = 1)
 	public void JsAlert() {
 		driver.get("https://practice.expandtesting.com/js-dialogs");
 		driver.findElement(By.id("js-alert")).click();
+//		driver.switchTo().alert().accept();
+		/*Using Alert class object and methods*/
 		Alert a = new Alert() {
 			@Override
 			public String getText() {
@@ -38,7 +49,7 @@ public class S_JavaScriptDialogs extends BaseTest {
 		Assert.assertEquals(driver.findElement(By.id("dialog-response")).getText().toString(), "OK");
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 2, retryAnalyzer = RetryFleakyTests.class)
 	public void JsConfirm() {
 		driver.get("https://practice.expandtesting.com/js-dialogs");
 		driver.findElement(By.id("js-confirm")).click();

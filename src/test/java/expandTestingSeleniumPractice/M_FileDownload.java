@@ -7,10 +7,10 @@ import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,13 +21,19 @@ public class M_FileDownload {
 
 	@BeforeMethod(onlyForGroups = { "defaultDriver" })
 	public void SetUp() {
+		EdgeOptions options = new EdgeOptions();
+		//Blocking Browser popup adds
+        options.setExperimentalOption("prefs", Map.of(
+            "profile.default_content_setting_values.popups", 2,
+            "profile.default_content_setting_values.notifications", 2
+        ));
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		driver.get("https://practice.expandtesting.com/download");
 	}
 
-	@AfterMethod
+	@AfterMethod 
 	public void TearDown() throws InterruptedException {
 		Thread.sleep(2000);
 		driver.quit();
@@ -38,7 +44,11 @@ public class M_FileDownload {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(3000);
+		//Using JavaScript for browser add blocking
+		js.executeScript("document.querySelectorAll('[id*=\"ads\"], [class*=\"ads\"], iframe').forEach(el => el.remove());");
 		driver.findElement(By.linkText("xpath-css.png")).click();
+		js.executeScript("document.querySelectorAll('[id*=\"ads\"], [class*=\"ads\"], iframe').forEach(el => el.remove());");
+		Thread.sleep(3000);
 	}
 
 	@Test
@@ -51,17 +61,16 @@ public class M_FileDownload {
 		prefs.put("download.prompt_for_download", false);
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", prefs);
-		// Launch Chrome with options
 		driver = new ChromeDriver(options);
-		driver.get("https://practice.expandtesting.com/download"); // Replace with actual URL
+		driver.manage().window().maximize();
+		driver.get("https://practice.expandtesting.com/download");
 		// Click the download link/button
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(3000);
-		driver.findElement(By.linkText("xpath-css.png")).click();
-		// Wait for download to complete (optional)
+		driver.findElement(By.linkText("cdct.jpg")).click();
 		try {
-			Thread.sleep(5000); // Add WebDriverWait for better handling
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

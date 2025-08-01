@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="expandTestingSeleniumPractice.L_FileUpload">
+      <class name="expandTestingSeleniumPractice.Y_MouseHover">
         <methods>
           <include name="SetUp"/>
           <include name="TearDown"/>
-          <include name="UploadWithRobotClass"/>
+          <include name="MouseAction"/>
         </methods>
-      </class> <!-- expandTestingSeleniumPractice.L_FileUpload -->
+      </class> <!-- expandTestingSeleniumPractice.Y_MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -23,8 +23,7 @@ public class B_LoginPage extends BaseTest {
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("subheader"))));
+		WaitForVisibility(driver.findElement(By.className("subheader")), driver);
 		Assert.assertEquals(driver.findElement(By.className("subheader")).getText().toString(), "Welcome to the Secure Area. When you are done click logout below.");
 	}
 }

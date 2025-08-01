@@ -3,6 +3,7 @@ package expandTestingSeleniumPractice;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -35,6 +36,12 @@ public class BaseTest {
 
         options.addArguments("--disable-gpu");
         options.addArguments("--remote-allow-origins=*");
+        
+      //Blocking Browser popup adds
+        options.setExperimentalOption("prefs", Map.of(
+            "profile.default_content_setting_values.popups", 2,
+            "profile.default_content_setting_values.notifications", 2
+        ));
 		
 		driver = new EdgeDriver(options);
 		driver.manage().window().maximize();

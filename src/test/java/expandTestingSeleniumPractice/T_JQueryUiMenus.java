@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import extentReporter.RetryFleakyTests;
+
 public class T_JQueryUiMenus extends BaseTest {
 
-	@Test
+	@Test (retryAnalyzer = RetryFleakyTests.class)
 	public void DownloadExcel() throws InterruptedException {
 		driver.get("https://practice.expandtesting.com/jqueryui/menu");
 		WebElement enabled = driver.findElement(By.xpath("//ul[@id='menu']/li[2]"));

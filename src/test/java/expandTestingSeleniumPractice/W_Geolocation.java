@@ -11,7 +11,7 @@ public class W_Geolocation extends BaseTest {
 		driver.findElement(By.id("geoBtn")).click();
 		WaitForVisibility(driver.findElement(By.id("lat-value")), driver);
 		String latitude = driver.findElement(By.id("lat-value")).getText().toString();
-		String longitude = driver.findElement(By.id("long-value")).getText().toString();
+		String longitude = driver.findElement(By.id("lon-value")).getText().toString();
 		System.out.println("Latitude : " + latitude + "\n" + "Longitude : " + longitude);
 	}
 }

@@ -11,7 +11,7 @@ import expandTestingSeleniumPractice.BaseTest;
 
 public class SecurePasswordCheck extends BaseTest {
 	
-	@Test
+	@Test (description = "Password security check")
 	public void CheckAcceptablePassword () {
 		driver.get("https://practice.expandtesting.com/secure-password-checker");
 		Scanner scan = new Scanner(System.in);

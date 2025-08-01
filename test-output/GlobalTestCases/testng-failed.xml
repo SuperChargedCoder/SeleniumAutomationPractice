@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [GlobalTestCases]" guice-stage="DEVELOPMENT">
-  <parameter name="headless" value="true"/>
   <listeners>
     <listener class-name="extentReporter.Listener"/>
   </listeners>
   <test thread-count="5" name="ExtentReporting(failed)">
     <classes>
-      <class name="expandTestingSeleniumPractice.L_FileUpload">
+      <class name="expandTestingSeleniumPractice.C_RegistrationPractice">
         <methods>
-          <include name="UploadWithSendKey"/>
+          <include name="UserRegistration"/>
           <include name="SetUp"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- expandTestingSeleniumPractice.L_FileUpload -->
+      </class> <!-- expandTestingSeleniumPractice.C_RegistrationPractice -->
+      <class name="expandTestingSeleniumPractice.B_LoginPage">
+        <methods>
+          <include name="UserLogin"/>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- expandTestingSeleniumPractice.B_LoginPage -->
+      <class name="expandTestingSeleniumPractice.O_NotificationMessage">
+        <methods>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+          <include name="HandlingNotificationMessage"/>
+        </methods>
+      </class> <!-- expandTestingSeleniumPractice.O_NotificationMessage -->
+      <class name="expandTestingSeleniumPractice.T_JQueryUiMenus">
+        <methods>
+          <include name="DownloadExcel"/>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- expandTestingSeleniumPractice.T_JQueryUiMenus -->
     </classes>
   </test> <!-- ExtentReporting(failed) -->
 </suite> <!-- Failed suite [GlobalTestCases] -->

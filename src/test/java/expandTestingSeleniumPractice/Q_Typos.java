@@ -14,7 +14,6 @@ public class Q_Typos extends BaseTest{
 		WebElement typoText = driver.findElement(By.xpath("//div[@class='page-layout']/div/p[2]"));
 		while (!correctText.equalsIgnoreCase(typoText.getText().toString())) {
 			driver.navigate().refresh();
-			
 			Thread.sleep(3000);
 			typoText = driver.findElement(By.xpath("//div[@class='page-layout']/div/p[2]"));
 		}
